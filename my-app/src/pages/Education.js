@@ -10,7 +10,7 @@ const contentStyle = {
   height: "300px",
   width: "70vh",
   "margin-top": "11vh",
-  "margin-bottom": "30px",
+  "margin-bottom": "50px",
   "margin-left": "35vh",
   color: "black",
   background: "white",
@@ -22,7 +22,7 @@ const contentStyle = {
 
 function Education() {
   return (
-    <Box theme={theme} bgColor="white">
+    <Box theme={theme}>
       <Image
         src="img/goldSky.svg"
         w="100vw"
@@ -30,8 +30,8 @@ function Education() {
         position="absolute"
         sx={{ zIndex: "0" }}
       />
-      <Image src="img/Group 22.svg" ml={{ "2xl": "40%", xl: "35%" }} />
-      <Box ml={{ "2xl": "25vh" }}>
+      <Image src="img/Group 22.svg" ml={{ "2xl": "35%", xl: "35%" }} />
+      <Box ml={{ "2xl": "20vh" }} mt="-5%">
         <Carousel autoplay>
           <Box>
             <Box style={contentStyle}>
@@ -101,52 +101,21 @@ function Education() {
               </Flex>
             </Box>
           </Box>
-          {/* <Box>
-            <Box style={contentStyle}>
-              <Image
-                src="img/flowerBox.svg"
-                display="flex"
-                position="absolute"
-                left="55%"
-                bottom="-30%"
-                sx={{ zIndex: "10" }}
-              />
-              <Image
-                src="img/dove.svg"
-                display="flex"
-                position="absolute"
-                bottom="100px"
-                left="-200px"
-              />
-            </Box>
-          </Box> */}
-          {/* <Box>
-            <Box style={contentStyle}>
-              <Image
-                src="img/flowerBox.svg"
-                display="flex"
-                position="absolute"
-                left="55%"
-                bottom="-30%"
-                sx={{ zIndex: "10" }}
-              />
-              <Image
-                src="img/dove.svg"
-                display="flex"
-                position="absolute"
-                bottom="100px"
-                left="-200px"
-              />
-            </Box>
-          </Box> */}
         </Carousel>
-        <Image
-          src="img/Group 23.svg"
-          display="flex"
-          position="relative"
-          mt={{ xl: "-10%", "2xl": "3" }}
-          right={{ "2xl": "80px" }}
-        />
+        <Flex position="relative">
+          <Image
+            src="img/Group 23.svg"
+            mt={{ xl: "-10%", "2xl": "-10%" }}
+            right={{ "2xl": "80px" }}
+          />
+          <Image
+            src="img/Group 23.svg"
+            display="flex"
+            position="absolute"
+            left={{ xl: "-30%", "2xl": "-30%" }}
+            mt={{ xl: "-2%", "2xl": "5%" }}
+          />
+        </Flex>
       </Box>
     </Box>
   );

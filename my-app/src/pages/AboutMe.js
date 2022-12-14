@@ -25,7 +25,7 @@ function AboutMe() {
           alt="Chain"
           position="absolute"
           boxSize={{ xl: "40%", "2xl": "35%" }}
-          top={{ xl: "22%", "2xl": "25%" }}
+          mt={{ xl: "-10%", "2xl": "-1%" }}
           left={{ xl: "2%", "2xl": "5%" }}
         />
 
