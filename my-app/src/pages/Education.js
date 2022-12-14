@@ -1,4 +1,4 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Card, Carousel } from "antd";
 import "@fontsource/great-vibes/400.css";
@@ -9,12 +9,10 @@ const contentStyle = {
   position: "relative",
   height: "300px",
   width: "70vh",
-  "margin-top": "20vh",
+  "margin-top": "11vh",
   "margin-bottom": "30px",
   "margin-left": "35vh",
-  color: "#ce93d8",
-  lineHeight: "160px",
-  textAlign: "center",
+  color: "black",
   background: "white",
   border: "2px solid gold",
   "border-radius": "20px 20px ",
@@ -24,12 +22,87 @@ const contentStyle = {
 
 function Education() {
   return (
-    <div theme={theme}>
-      <Flex></Flex>
-      <div>
+    <Box theme={theme} bgColor="white">
+      <Image
+        src="img/goldSky.svg"
+        w="100vw"
+        display="flex"
+        position="absolute"
+        sx={{ zIndex: "0" }}
+      />
+      <Image src="img/Group 22.svg" ml={{ "2xl": "40%", xl: "35%" }} />
+      <Box ml={{ "2xl": "25vh" }}>
         <Carousel autoplay>
-          <div>
-            <div style={contentStyle}>
+          <Box>
+            <Box style={contentStyle}>
+              <Image
+                src="img/flowerBox.svg"
+                display="flex"
+                position="absolute"
+                left="60%"
+                bottom="-30%"
+                sx={{ zIndex: "10" }}
+              />
+              <Image
+                src="img/dove.svg"
+                display="flex"
+                position="absolute"
+                bottom="100px"
+                left="-200px"
+              />
+              <Flex>
+                <Image src="img/sdu.svg" w="250" h="250" mt="25px" />
+                <Text
+                  fontSize="20px"
+                  mt="25px"
+                  style={{ textIndent: 40 }}
+                  mr="10px"
+                >
+                  I started studying at Suan Dusit University in a major of
+                  Faculty of Fine and Applied Arts in Home Economics in 2014 and
+                  I have graduated bachelor's degree from Suan Dusit University,
+                  in a major of Faculty of Fine and Applied Arts in Home
+                  Economics with GPA: 3.00
+                </Text>
+              </Flex>
+            </Box>
+          </Box>
+          <Box>
+            <Box style={contentStyle}>
+              <Image
+                src="img/flowerBox.svg"
+                display="flex"
+                position="absolute"
+                left="60%"
+                bottom="-30%"
+                sx={{ zIndex: "10" }}
+              />
+              <Image
+                src="img/dove.svg"
+                display="flex"
+                position="absolute"
+                bottom="100px"
+                left="-200px"
+              />
+              <Flex>
+                <Image src="img/techup.png" w="250" h="250" mt="25px" />
+                <Text
+                  fontSize="20px"
+                  mt="25px"
+                  style={{ textIndent: 40 }}
+                  mr="10px"
+                >
+                  The content of this online bootcamp course does not just teach
+                  programming. But it covers everything from the basics of
+                  fundamentals to the concepts and methods of real software
+                  development. With the following contents Programming,
+                  Introduction to Programming and Back-End Development.
+                </Text>
+              </Flex>
+            </Box>
+          </Box>
+          {/* <Box>
+            <Box style={contentStyle}>
               <Image
                 src="img/flowerBox.svg"
                 display="flex"
@@ -38,10 +111,17 @@ function Education() {
                 bottom="-30%"
                 sx={{ zIndex: "10" }}
               />
-            </div>
-          </div>
-          <div>
-            <div style={contentStyle}>
+              <Image
+                src="img/dove.svg"
+                display="flex"
+                position="absolute"
+                bottom="100px"
+                left="-200px"
+              />
+            </Box>
+          </Box> */}
+          {/* <Box>
+            <Box style={contentStyle}>
               <Image
                 src="img/flowerBox.svg"
                 display="flex"
@@ -50,35 +130,25 @@ function Education() {
                 bottom="-30%"
                 sx={{ zIndex: "10" }}
               />
-            </div>
-          </div>
-          <div>
-            <div style={contentStyle}>
               <Image
-                src="img/flowerBox.svg"
+                src="img/dove.svg"
                 display="flex"
                 position="absolute"
-                left="55%"
-                bottom="-30%"
-                sx={{ zIndex: "10" }}
+                bottom="100px"
+                left="-200px"
               />
-            </div>
-          </div>
-          <div>
-            <div style={contentStyle}>
-              <Image
-                src="img/flowerBox.svg"
-                display="flex"
-                position="absolute"
-                left="55%"
-                bottom="-30%"
-                sx={{ zIndex: "10" }}
-              />
-            </div>
-          </div>
+            </Box>
+          </Box> */}
         </Carousel>
-      </div>
-    </div>
+        <Image
+          src="img/Group 23.svg"
+          display="flex"
+          position="relative"
+          mt={{ xl: "-10%", "2xl": "3" }}
+          right={{ "2xl": "80px" }}
+        />
+      </Box>
+    </Box>
   );
 }
 export default Education;

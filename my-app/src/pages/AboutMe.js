@@ -14,26 +14,32 @@ import theme from "../configs/theme";
 
 function AboutMe() {
   return (
-    <Flex theme={theme}>
+    <Flex
+      theme={theme}
+      bgColor="#8CB1BB"
+      backgroundImage="url('/img/skyAbout.svg')"
+    >
       <Flex>
-        <Flex
+        <Image
+          src="img/Group 20.svg"
+          alt="Chain"
           position="absolute"
-          boxSize={{ xl: "60%", "2xl": "45%" }}
-          top={{ xl: "6.5%", "2xl": "25%" }}
-          left={{ xl: "-12%", "2xl": "-2%" }}
-        >
-          <Image src="img/Group 20.svg" alt="Chain" />
-        </Flex>
-        <Flex
+          boxSize={{ xl: "40%", "2xl": "35%" }}
+          top={{ xl: "22%", "2xl": "25%" }}
+          left={{ xl: "2%", "2xl": "5%" }}
+        />
+
+        <Box
           mt={{ xl: "8%", "2xl": "15%" }}
+          mb={{ xl: "8%", "2xl": "5%" }}
           bg="white"
           color="gold"
           border="2px"
           borderRadius="10px"
           shadow="2xl"
-          ml="40%"
+          ml="45%"
           position="relative"
-          right={{ xl: "3%", "2xl": "5%" }}
+          right={{ xl: "10%", "2xl": "10%" }}
         >
           <Flex flexDirection="column" m="5%">
             <Center>
@@ -59,7 +65,7 @@ function AboutMe() {
               have become a full-stack Developer now.
             </Text>
           </Flex>
-        </Flex>
+        </Box>
       </Flex>
     </Flex>
   );

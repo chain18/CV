@@ -3,17 +3,15 @@ import { Box, Flex, Image, Center } from "@chakra-ui/react";
 function Navbar() {
   return (
     <Flex
-      mt={{ "2xl": "-5%", xl: "-13%", lg: "-20%" }}
-      position="relative"
+      position="absolute"
       justifyContent="center"
       sx={{
         position: "-webkit-sticky",
         position: "sticky",
         top: "0",
-        zIndex: "5000000000000000",
+        zIndex: "500",
       }}
-      mb={{ "2xl": "0px", xl: "5%" }}
-      mr={{xl:"5%"}}
+      mr={{ xl: "5%" }}
     >
       <Flex
         w={{ "2xl": "100%", xl: "50vw", lg: "40vw" }}
