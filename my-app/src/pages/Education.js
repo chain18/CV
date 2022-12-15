@@ -22,14 +22,14 @@ const contentStyle = {
 
 function Education() {
   return (
-    <Box theme={theme}>
-      <Image
+    <Box theme={theme} bgImage="url('/img/goldSky2.svg')">
+      {/* <Image
         src="img/goldSky.svg"
         w="100vw"
         display="flex"
         position="absolute"
         sx={{ zIndex: "0" }}
-      />
+      /> */}
       <Image src="img/Group 22.svg" ml={{ "2xl": "35%", xl: "35%" }} />
       <Box ml={{ "2xl": "20vh" }} mt="-5%">
         <Carousel autoplay>
@@ -102,18 +102,20 @@ function Education() {
             </Box>
           </Box>
         </Carousel>
-        <Flex position="relative">
+        <Flex position="absolute" w="fit-content">
           <Image
             src="img/Group 23.svg"
             mt={{ xl: "-10%", "2xl": "-10%" }}
             right={{ "2xl": "80px" }}
+            sx={{ zIndex: "10" }}
           />
           <Image
             src="img/Group 23.svg"
             display="flex"
             position="absolute"
-            left={{ xl: "-30%", "2xl": "-30%" }}
-            mt={{ xl: "-2%", "2xl": "5%" }}
+            left={{ xl: "-35%", "2xl": "-30%" }}
+            mt={{ xl: "-2%", "2xl": "0%" }}
+            sx={{ zIndex: "10" }}
           />
         </Flex>
       </Box>

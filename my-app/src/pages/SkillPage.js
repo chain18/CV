@@ -9,36 +9,46 @@ import {
   Heading,
   Image,
   Flex,
+  Grid,
 } from "@chakra-ui/react";
 import { React, useState } from "react";
-import AboutMe from "./AboutMe";
 
 function Skill() {
-  const colors = useColorModeValue(
-    ["red.50", "teal.50", "blue.50", "yellow.50"],
-    ["red.900", "teal.900", "blue.900", "yellow.900"]
-  );
+  const colors = useColorModeValue([
+    "url('/img/skyAbout.svg')",
+    "linear-gradient(180deg,  #FFEEC9,#8C8FA2, #FDDB8E)",
+    "linear-gradient(180deg,  #FFEEC9,#AEC7EA, #FDDB8E)",
+    "blue.50",
+    "url('/img/skyAbout.svg')",
+  ]);
   const [tabIndex, setTabIndex] = useState(0);
   const bg = colors[tabIndex];
   return (
-    <Box>
+    <Flex>
       <Tabs
-        mt={{ xl: "-3%", "2xl": "13%" }}
         onChange={(index) => setTabIndex(index)}
         bg={bg}
-        w="100vw"
-        h="100vw"
-        position="absolute"
-        sx={{ zIndex: "-1" }}
+        sx={{ zIndex: "0" }}
+        w="100%"
+        h={{ xl: "90vw", "2xl": "75vw" }}
       >
         <Image
-          left="60vw"
+          left="55vw"
           src="img/Group 26.svg"
+          // src="img/skillTitle.svg"
           display="flex"
           position="absolute"
-          sx={{ zIndex: "10" }}
+          sx={{ zIndex: "-10" }}
         />
-        <TabList pt={{ xl: "20%", "2xl": "15%" }}>
+        <Image
+          src="img/skillsky.webp"
+          sx={{ zIndex: "-2" }}
+          position="absolute"
+          bottom="-4%"
+          w="100vw"
+        />
+
+        <TabList ml="20%" pt={{ xl: "20%", "2xl": "15%" }}>
           <Tab>
             <Heading>Front-End</Heading>
           </Tab>
@@ -52,17 +62,103 @@ function Skill() {
             <Heading>Project</Heading>
           </Tab>
         </TabList>
+
         <TabPanels p="2rem">
           <TabPanel>
-            <Flex></Flex>
+            <Flex flexDirection="column" position="absolute" ml={{ xl: "5%" }}>
+              <Flex boxSize={{ xl: "400px", "2xl": "50%" }}>
+                <Image
+                  src="img/chakra.svg"
+                  mb={{ xl: "-350px", "2xl": "250px" }}
+                />
+                <Image src="img/js.svg" mt={{ xl: "-60px", "2xl": "150px" }} />
+                <Image
+                  src="img/react.svg"
+                  mb={{ xl: "-350px", "2xl": "150px" }}
+                  ml={{ "2xl": "60px" }}
+                />
+              </Flex>
+              <Flex boxSize={{ xl: "400px", "2xl": "50%" }}>
+                <Image
+                  src="img/tailwind.svg"
+                  mb={{ xl: "-220px", "2xl": "200px" }}
+                />
+                <Image
+                  src="img/css.svg"
+                  mb={{ xl: "100px", "2xl": "-150px" }}
+                />
+                <Image
+                  src="img/html.svg"
+                  mb={{ xl: "-220px", "2xl": "90px" }}
+                />
+              </Flex>
+            </Flex>
           </TabPanel>
-          <TabPanel></TabPanel>
+          <TabPanel>
+            <Flex flexDirection="column" position="absolute" ml={{ xl: "5%" }}>
+              <Flex boxSize={{ xl: "400px", "2xl": "50%" }}>
+                <Image
+                  src="img/chakra.svg"
+                  mb={{ xl: "-350px", "2xl": "250px" }}
+                />
+                <Image src="img/js.svg" mt={{ xl: "-60px", "2xl": "150px" }} />
+                <Image
+                  src="img/react.svg"
+                  mb={{ xl: "-350px", "2xl": "150px" }}
+                  ml={{ "2xl": "60px" }}
+                />
+              </Flex>
+              <Flex boxSize={{ xl: "400px", "2xl": "50%" }}>
+                <Image
+                  src="img/tailwind.svg"
+                  mb={{ xl: "-220px", "2xl": "200px" }}
+                />
+                <Image
+                  src="img/css.svg"
+                  mb={{ xl: "100px", "2xl": "-150px" }}
+                />
+                <Image
+                  src="img/html.svg"
+                  mb={{ xl: "-220px", "2xl": "90px" }}
+                />
+              </Flex>
+            </Flex>
+          </TabPanel>
 
-          <TabPanel>Red, yellow and blue.</TabPanel>
+          <TabPanel>
+            <Flex flexDirection="column" position="absolute" ml={{ xl: "5%" }}>
+              <Flex boxSize={{ xl: "400px", "2xl": "50%" }}>
+                <Image
+                  src="img/chakra.svg"
+                  mb={{ xl: "-350px", "2xl": "250px" }}
+                />
+                <Image src="img/js.svg" mt={{ xl: "-60px", "2xl": "150px" }} />
+                <Image
+                  src="img/react.svg"
+                  mb={{ xl: "-350px", "2xl": "150px" }}
+                  ml={{ "2xl": "60px" }}
+                />
+              </Flex>
+              <Flex boxSize={{ xl: "400px", "2xl": "50%" }}>
+                <Image
+                  src="img/tailwind.svg"
+                  mb={{ xl: "-220px", "2xl": "200px" }}
+                />
+                <Image
+                  src="img/css.svg"
+                  mb={{ xl: "100px", "2xl": "-150px" }}
+                />
+                <Image
+                  src="img/html.svg"
+                  mb={{ xl: "-220px", "2xl": "90px" }}
+                />
+              </Flex>
+            </Flex>
+          </TabPanel>
           <TabPanel></TabPanel>
         </TabPanels>
       </Tabs>
-    </Box>
+    </Flex>
   );
 }
 export default Skill;
