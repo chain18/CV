@@ -5,4 +5,10 @@
     box-sizing: border-box;
   }
   
- 
+  :where(.css-dev-only-do-not-override-1hyej8k).ant-btn {
+    font-size: 14px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+    margin: 2px;
+}
