@@ -30,7 +30,7 @@ function Skill() {
   const [tabIndex, setTabIndex] = useState(0);
   const bg = colors[tabIndex];
   return (
-    <Flex>
+    <Flex position="relative">
       <Tabs
         onChange={(index) => setTabIndex(index)}
         bg={bg}
@@ -40,7 +40,7 @@ function Skill() {
       >
         <Image
           left="65vw"
-          mt={{ xl: "-23%", "2xl": "-18%" }}
+          mt={{ xl: "1%", "2xl": "1%" }}
           src="img/Group 32.svg"
           boxSize={{ xl: "30%", "2xl": "30%" }}
           // src="img/skillTitle.svg"
@@ -77,7 +77,7 @@ function Skill() {
               <Image
                 src="img/FE.svg"
                 w="80vw"
-                h={{ "2xl": "50vw", xl: "70vw" }}
+                h={{ "2xl": "50vw", xl: "60vw" }}
                 ml="5%"
               />
               {/* <Flex boxSize={{ xl: "400px", "2xl": "50%" }}>
@@ -113,7 +113,7 @@ function Skill() {
               <Image
                 src="img/BE1.svg"
                 w="80vw"
-                h={{ "2xl": "60vw", xl: "60vw" }}
+                h={{ "2xl": "50vw", xl: "60vw" }}
                 ml="7%"
               />
             </Flex>
@@ -124,7 +124,7 @@ function Skill() {
               <Image
                 src="img/Group 34.svg"
                 w="80vw"
-                h={{ "2xl": "60vw", xl: "60vw" }}
+                h={{ "2xl": "50vw", xl: "60vw" }}
                 ml="2%"
               />
             </Flex>

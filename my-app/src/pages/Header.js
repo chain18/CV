@@ -25,7 +25,7 @@ function Header() {
         <Image
           src="img/Group 13.svg"
           w="100vw"
-          top={{ "2xl": "8%" }}
+          top={{ "2xl": "5%" }}
           display="flex"
           position="absolute"
         />
